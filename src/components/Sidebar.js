@@ -15,7 +15,7 @@ function Sidebar() {
         {/*Dashboard  */}
         <li class="nav-item active">
           <Link to='/dashboard'>
-          <a class="nav-link" href="components/dashboard">
+          <a class="nav-link" href="dashboard.js">
                   <i class="fas fa-fw fa-tachometer-alt"></i>
                   <span>Dashboard</span>
                 </a>
@@ -30,7 +30,7 @@ function Sidebar() {
         {/* Add Student */}
         <li class="nav-item active">
          <Link to='/addstudents'>
-         <a className = 'nav-link' href="components/AddStudents">
+         <a className = 'nav-link' href="AddStudents.js">
                   <span>Add Students</span>
               </a>
          </Link>
@@ -39,7 +39,7 @@ function Sidebar() {
         {/* All student */}
         <li class="nav-item active">
            <Link to='/allstudents'>
-           <a  class="nav-link" href="components/AllStudents">
+           <a  class="nav-link" href="AllStudents.js">
                 <span>All Students</span>
               </a>
            </Link>
