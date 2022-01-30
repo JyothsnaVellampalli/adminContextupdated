@@ -9,16 +9,21 @@ import {StudentContext} from '../App';
 
 function EditStudent() {
     let context=useContext(StudentContext);
+    let navigate=useNavigate("");
+    let params=useParams();
+      console.log(params);
+    
     useEffect(()=>{
+      let setdata=()=>{
         setName(context.students[params.id].name);
-        setEmail(context.students[params.id].email);
-        setMobile(context.students[params.id].mobile);
-        setCls(context.students[params.id].class);
+          setEmail(context.students[params.id].email);
+          setMobile(context.students[params.id].mobile);
+          setCls(context.students[params.id].class);
+      }
+        setdata();
         
-      },[])
-      let navigate=useNavigate("");
-      let params=useParams();
-        console.log(params);
+      },[context,params.id])
+     
     
       let [name,setName]=useState("");
       let [email,setEmail]=useState("");
